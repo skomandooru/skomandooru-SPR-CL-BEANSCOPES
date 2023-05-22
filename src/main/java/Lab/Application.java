@@ -19,8 +19,8 @@ public class Application {
      * could be instructed to either provide a newly-instantiated object or reuse an existing object. They are listed
      * here:
      *
-     * singleton - the default scope, any time a specific bean is requested, the same object is reused.
-     * prototype - any team a ban is requested, an object is newly instantiated.
+     * singleton - the default scope, any time a specific bean is requested, the existing object is reused.
+     * prototype - any time a bean is requested, a new object is instantiated.
      * request - only used in web applications. a new object is instantiated once per web request.
      * session - only used in web applications. a new object is instantiated once per web session.
      * application - only used in web applications. a new object is instantiated once per web servlet.
@@ -37,7 +37,7 @@ public class Application {
     }
 
     /**
-     * TODO: make it so that a new ScopedBean is instantiated every time the labBean is requested.
+     * TODO: correct the following code so that a new ScopedBean is instantiated every time the labBean is requested.
      */
     @Bean
     public ScopedBean labBean(){
