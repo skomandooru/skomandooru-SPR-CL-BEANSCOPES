@@ -26,8 +26,8 @@ public class Application {
      */
     
      /**
-     * The annotation here is redundant as "singleton" is the default, but this code shows that the scope may be
-     * manually set.
+     * The @Scope() annotation here is unnecessary as "singleton" is the default, but this example shows how the
+     * scope can be set.
      */
     @Bean
     @Scope("singleton")
