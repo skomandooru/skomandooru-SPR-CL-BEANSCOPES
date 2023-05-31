@@ -7,8 +7,8 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 public class ScopedBeanTest {
     /**
-     * will pass when requesting the "labBean" multiple times returns differently objects, due to the proper use
-     * of one of the bean scopes.
+     * Requesting the "labBean" multiple times should result in multiple instances. This is the expected behavior
+     * of one of the bean scopes. This test will pass when the bean is set to the proper scope.
      */
     @Test
     public void scopedBeanTest(){
