@@ -1,6 +1,6 @@
 # SPR-CL-BEANSCOPES
 
-This coding lab covers unit "Spring Boot", module "Spring Core". 
+This coding lab covers unit "Spring Core", module "Inversion of Control". 
 
 ## Instructions
 - This project contains the definitions for some beans
