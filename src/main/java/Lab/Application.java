@@ -39,10 +39,10 @@ public class Application {
      * TODO: correct the following code so that a new ScopedBean is instantiated every time the labBean is requested.
      */
     @Bean
-    public ScopedBean labBean(){
+    @Scope("prototype") // Change the scope to "prototype"
+    public ScopedBean labBean() {
         return new ScopedBean();
     }
-
     /**
      * Main method for manual testing of your code
      */
